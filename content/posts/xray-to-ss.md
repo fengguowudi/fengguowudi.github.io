@@ -72,7 +72,7 @@ description: xray是个很方便的网络代理工具
 **注意：** 这个位置不是`Xray`标准的日志文件位置，放在这里是避免权限问题对新人的操作带来困扰。当你熟悉之后，建议回归默认位置： `/var/log/xray/access.log` 和 `/var/log/xray/error.log` 。
 
 
-    4. 因为Xray默认是nobody用户使用，所以我们需要让其他用户也有“写”的权限（`*.log` 就是所有文件后缀是`log`的文件，此时`CLI`界面的效率优势就逐渐出现了）
+   4. 因为Xray默认是nobody用户使用，所以我们需要让其他用户也有“写”的权限（`*.log` 就是所有文件后缀是`log`的文件，此时`CLI`界面的效率优势就逐渐出现了）
         ```
         $ chmod a+w ~/xray_log/*.log
         ```
@@ -337,7 +337,7 @@ To                         Action      From
 
 
 
-    4. 修改 `kernel` 参数配置文件 `sysctl.conf` 并指定开启 `BBR`
+   4. 修改 `kernel` 参数配置文件 `sysctl.conf` 并指定开启 `BBR`
     
         `$ sudo nano /etc/sysctl.conf`
 
@@ -346,7 +346,7 @@ To                         Action      From
 
 
 
-    5. 把下面的内容添加进去
+   5. 把下面的内容添加进去
     
         ```
         net.core.default_qdisc=fq
@@ -355,36 +355,36 @@ To                         Action      From
 
 
 
-    6. 重启VPS、使内核更新和`BBR`设置都生效
+   6. 重启VPS、使内核更新和`BBR`设置都生效
         ```
         $ sudo reboot
         ```
-
-
-
-
-    8. 确认`BBR`开启
-    
-        如果你想确认 `BBR` 是否正确开启，可以使用下面的命令：
-    
-        `$ lsmod | grep bbr`
-    
-        此时应该返回这样的结果：
-    
-        `tcp_bbr`
         
+   7. 确认`BBR`开启
     
-        如果你想确认 `fq` 算法是否正确开启，可以使用下面的命令：
+   如果你想确认 `BBR` 是否正确开启，可以使用下面的命令：
     
+   ```
+   $ lsmod | grep bbr`
+   ```
     
-        `$ lsmod | grep fq`
-    
-    
-        此时应该返回这样的结果：
-    
-    
-        `sch_fq`
-    
+   此时应该返回这样的结果：
+        
+   ```
+   tcp_bbr
+   ```
+  
+   如果你想确认 `fq` 算法是否正确开启，可以使用下面的命令：
+
+   ```
+   $ lsmod | grep fq
+   ```
+  
+   此时应该返回这样的结果：
+
+   ```
+   sch_fq
+   ```
 
 
 ## 六、感谢
