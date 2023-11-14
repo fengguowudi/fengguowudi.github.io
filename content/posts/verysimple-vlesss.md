@@ -1,6 +1,17 @@
+---
+title: "使用verysimple搭建一个vless代理"
+date: 2023-11-14T21:28:18+08:00
+tags: [奇技淫巧,技术教程]
+draft: false
+description: VerySimple近期不再更新，酌情使用哦~
+---
+
+<!--more-->
+
 ## 1.准备工作
+
 系统：debian11
-软件包：wget sudo nano
+软件包：`wget` ` sudo`  `nano`
 
 ## 2.安装
 
@@ -109,9 +120,9 @@ systemctl status verysimple
 
 ### 7.结语
 
-感谢大佬们的辛勤付出！
-参考文章：
-`https://github.com/hahahrfool/v2ray_simple/blob/main/install.md`
-`https://github.com/hahahrfool/v2ray_simple/blob/main/README.md`
-帮助列表：
+感谢大佬们的辛勤付出！  
+参考文章：  
+`https://github.com/hahahrfool/v2ray_simple/blob/main/install.md`  
+`https://github.com/hahahrfool/v2ray_simple/blob/main/README.md `  
+帮助列表：  
 `https://t.me/v2raysimple`
