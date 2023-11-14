@@ -87,9 +87,9 @@ disableThemeInject = false
   # FixIt 0.2.0 | NEW Header title config
   [header.title]
     # URL of the LOGO
-    logo = "/fixit.min.svg"
+    logo = "https://ucgimgview.fmapp.com/attachv1/image/20231114/20231114203745_56689.png"
     # title name
-    name = "Hugo FixIt Blog"
+    name = "Fengguo's Blog"
     # you can add extra information before the name (HTML format is supported), such as icons
     pre = ""
     # you can add extra information after the name (HTML format is supported), such as icons
@@ -186,9 +186,9 @@ disableThemeInject = false
   [home.profile]
     enable = true
     # Gravatar Email for preferred avatar in home page
-    gravatarEmail = "xx@xx.com"
+    gravatarEmail = ""
     # URL of avatar shown in home page
-    avatarURL = ""
+    avatarURL = "https://ucgimgview.fmapp.com/attachv1/image/20231114/20231114193452_98806.png"
     # FixIt 0.2.17 | NEW identifier of avatar menu link
     avatarMenu = ""
     # FixIt 0.2.7 | CHANGED title shown in home page (HTML format is supported)

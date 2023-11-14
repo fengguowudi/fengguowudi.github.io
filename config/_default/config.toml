@@ -5,8 +5,8 @@
 
 title = "Fengguo's Blog"
 baseURL = "/"
-theme = ["FixIt", "shortcode-sponsor-log"]
-defaultContentLanguage = "zh-CN"
+theme = "FixIt"
+defaultContentLanguage = "zh-cn"
 languageCode = "zh-CN"
 hasCJKLanguage = true
 enableRobotsTXT = true
