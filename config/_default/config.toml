@@ -3,11 +3,11 @@
 # See: https://gohugo.io/getting-started/configuration/
 # -------------------------------------------------------------------------------------
 
-title = "Hugo FixIt Blog"
-baseURL = "http://example.org/"
-theme = "FixIt"
-defaultContentLanguage = "en"
-languageCode = "en"
+title = "Fengguo's Blog"
+baseURL = "/"
+theme = ["FixIt", "shortcode-sponsor-log"]
+defaultContentLanguage = "zh-CN"
+languageCode = "zh-CN"
 hasCJKLanguage = true
 enableRobotsTXT = true
 enableEmoji = true
