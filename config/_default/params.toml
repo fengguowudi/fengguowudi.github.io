@@ -319,7 +319,7 @@ disableThemeInject = false
   # license info (HTML format is supported)
   license = '<a rel="license external nofollow noopener noreferrer" href="https://creativecommons.org/licenses/by-nc-sa/4.0/" target="_blank">CC BY-NC-SA 4.0</a>'
   # whether to show link to Raw Markdown content of the content
-  linkToMarkdown = true
+  linkToMarkdown = false
   # FixIt 0.2.4 | NEW whether to show the full text content in RSS
   rssFullText = false
   # FixIt 0.2.13 | NEW Page style ["narrow", "normal", "wide", ...]
@@ -546,7 +546,7 @@ disableThemeInject = false
       outlined = false
     # FixIt 0.2.0 | NEW Commento comment config (https://commento.io)
     [page.comment.commento]
-      enable = false
+      enable = true
     # FixIt 0.2.5 | NEW Utterances comment config (https://utteranc.es)
     [page.comment.utterances]
       enable = false

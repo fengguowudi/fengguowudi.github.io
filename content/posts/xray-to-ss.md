@@ -6,7 +6,14 @@ draft: false
 description: xray是个很方便的网络代理工具
 ---
 
+
+
+<!--more-->
+
+
+
 ## 一、安装Xray
+
 ---
 
 首先，Xray的官方载体，就是 [xray-core](https://github.com/XTLS/Xray-core) 开源项目（基于 `MPL 2.0` 开源协议）生成的二进制程序。你把这个二进制放在服务器运行，它就是服务器端；你把它下载到本地电脑运行，它就是客户端。主要区别来源于【配置】。
@@ -311,7 +318,6 @@ To                         Action      From
 **说明：** 本文以 Debian 10 为例，所以使用 `/etc/apt/sources.list` 仍无问题，但如果你并不是根据本文从头开始，或者使用了其他Linux发行版，那么建议你建立 `/etc/apt/sources.list.d/` 文件夹，并在这个文件夹内建立自己的配置文件，形如 `/etc/apt/sources.list.d/vpsadmin.list`，以此保证兼容性，也可避免默认文件在不可预见的情况下被覆盖而导致配置丢失。
 
 
-​    
 ​    2. 然后把下面这一条加在最后，并保存退出。
 ​        ```
 ​        deb http://deb.debian.org/debian buster-backports main
@@ -332,9 +338,8 @@ To                         Action      From
 
 
     4. 修改 `kernel` 参数配置文件 `sysctl.conf` 并指定开启 `BBR`
-        ```
-        $ sudo nano /etc/sysctl.conf
-        ```
+    
+        `$ sudo nano /etc/sysctl.conf`
 
 
 **说明：** 本文以 Debian 10 为例，所以使用 `/etc/sysctl.conf` 仍无问题，但如果你并不是跟着本文从头开始，或者使用了其他Linux发行版，那么建议你建立 `/etc/sysctl.d/` 文件夹，并在这个文件夹内建立自己的配置文件，形如 `/etc/sysctl.d/vpsadmin.conf`，以此保证兼容性，因为部分发行版在 `systemd` 207 版本之后便不再从 `/etc/sysctl.conf` 读取参数。使用自定义配置文件也可避免默认文件在不可预见的情况下被覆盖而导致配置丢失。
@@ -342,11 +347,14 @@ To                         Action      From
 
 
     5. 把下面的内容添加进去
+    
         ```
         net.core.default_qdisc=fq
         net.ipv4.tcp_congestion_control=bbr
         ```
-    
+
+
+
     6. 重启VPS、使内核更新和`BBR`设置都生效
         ```
         $ sudo reboot
@@ -359,29 +367,24 @@ To                         Action      From
     
         如果你想确认 `BBR` 是否正确开启，可以使用下面的命令：
     
-        ```
-        $ lsmod | grep bbr
-        ```
+        `$ lsmod | grep bbr`
     
         此时应该返回这样的结果：
     
-        ```
-        tcp_bbr
-        ```
+        `tcp_bbr`
+        
     
         如果你想确认 `fq` 算法是否正确开启，可以使用下面的命令：
     
-        ```
-        $ lsmod | grep fq
-        ```
+    
+        `$ lsmod | grep fq`
+    
     
         此时应该返回这样的结果：
     
-        ```
-        sch_fq
-        ```
-
-
+    
+        `sch_fq`
+    
 
 
 ## 六、感谢
@@ -389,5 +392,3 @@ To                         Action      From
 
 
 [1]: https://xtls.github.io/document/level-0/ch07-xray-server.html
-
-```111```

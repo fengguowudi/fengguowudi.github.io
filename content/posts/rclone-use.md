@@ -4,13 +4,13 @@ date: 2021-10-24 20:17:20
 tags: [笔记,技术教程]
 published: true
 hideInList: false
+description: Rclone 是一个很牛逼的网盘同步工具，两盘对拷之类的骚操作它都可以实现
 feature: 
 isTop: false
----
-软件简介
-----
 
-Rclone 是一个很牛逼的网盘同步工具，两盘对拷之类的骚操作他都可以实现
+---
+
+<!--more-->
 
 安装
 --
