@@ -1,5 +1,5 @@
 ---
-title: "使用verysimple搭建一个vless代理"
+title: "使用verysimple搭建一个vlesss代理"
 date: 2023-11-14T21:28:18+08:00
 tags: [奇技淫巧,技术教程]
 draft: false
